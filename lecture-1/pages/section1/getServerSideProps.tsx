@@ -43,3 +43,4 @@ export const getServerSideProps: GetServerSideProps = async ({ res }) => {
 
 // build time에 pre-rendering 되는 것이 아니라, request time에 pre-rendering 됨
 // SSG(Server Side Generation) vs SSR(Server Side Rendering)
+// cache-control header를 활용해 캐싱 가능
