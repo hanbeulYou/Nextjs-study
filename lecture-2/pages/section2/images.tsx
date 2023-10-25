@@ -145,3 +145,4 @@ export default Images;
 
 // v12는 span tag를 활용해 레이아웃을 스타일링 함(웹 표준 X)
 // v12는 화면 크기에 맞게 사이즈가 변경됨
+// layout shift 기능, objectFit option 등
