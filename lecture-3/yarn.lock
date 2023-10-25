@@ -122,10 +122,22 @@
   dependencies:
     tslib "^2.4.0"
 
+"@types/geojson@*":
+  version "7946.0.12"
+  resolved "https://registry.npmjs.org/@types/geojson/-/geojson-7946.0.12.tgz"
+  integrity sha512-uK2z1ZHJyC0nQRbuovXFt4mzXDwf27vQeUWNhfKGwRcWW429GOhP8HxUHlM6TLH4bzmlv/HlEjpvJh3JfmGsAA==
+
 "@types/json5@^0.0.29":
   version "0.0.29"
   resolved "https://registry.npmjs.org/@types/json5/-/json5-0.0.29.tgz"
   integrity sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==
+
+"@types/navermaps@^3.7.1":
+  version "3.7.1"
+  resolved "https://registry.npmjs.org/@types/navermaps/-/navermaps-3.7.1.tgz"
+  integrity sha512-VqHkbpllheLsshIx+6VkpKFPMqp6zFZrFPZka4oaaDFlmktmY6s9N25DnM1c38+UWLy9leBxuoPnlkNZneo9ZA==
+  dependencies:
+    "@types/geojson" "*"
 
 "@types/node@18.15.11":
   version "18.15.11"
