@@ -34,3 +34,6 @@ export default function Links() {
 // Link를 활용하면 해당 페이지의 정보를 미리 받아와 CSR 방식으로 라우팅
 // 해당 파일을 lazy 하게 받아옴
 // Link가 a tag를 완전히 대체(13 버전 이후)
+
+// useRouter Hook의 경우, 미리 페이지의 정보를 받아오지 않음
+// 이를 위해 prefetch를 사용
