@@ -1,6 +1,9 @@
 import { GetStaticPaths, GetStaticProps, NextPage } from 'next';
 // import { useRouter } from 'next/router';
 import type { Store } from '../types/store';
+import styles from '../styles/detail.module.scss';
+import DetailHeader from '../components/home/DetailHeader';
+import DetailContent from '../components/home/DetailContent';
 
 interface Props {
   store: Store;
@@ -11,7 +14,18 @@ const StoreDetail: NextPage<Props> = ({ store }) => {
   // if (router.isFallback) {
   //   return <div>Loading...</div>;
   // }
-  return <div>name: {store.name}</div>;
+  const expanded = true;
+
+  return (
+    <div className={`${styles.detailSection} ${styles.expanded}`}>
+      <DetailHeader
+        currentStore={store}
+        expanded={expanded}
+        onClickArrow={() => null}
+      />
+      <DetailContent currentStore={store} expanded={expanded} />
+    </div>
+  );
 };
 export default StoreDetail;
 
