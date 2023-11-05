@@ -6,6 +6,7 @@ import DetailHeader from '../components/home/DetailHeader';
 import DetailContent from '../components/home/DetailContent';
 import { useRouter } from 'next/router';
 import useCurrentStore from '@/hooks/useCurrentStore';
+import { NextSeo } from 'next-seo';
 
 interface Props {
   store: Store;
@@ -27,14 +28,21 @@ const StoreDetail: NextPage<Props> = ({ store }) => {
   const expanded = true;
 
   return (
-    <div className={`${styles.detailSection} ${styles.expanded}`}>
-      <DetailHeader
-        currentStore={store}
-        expanded={expanded}
-        onClickArrow={goToMap}
+    <>
+      <NextSeo
+        title={store.name}
+        description="Next.js 시작하기 강의를 위한 매장 상세 페이지"
+        canonical={`https://nextjs-study-zeta.vercel.app/${store.name}`}
       />
-      <DetailContent currentStore={store} expanded={expanded} />
-    </div>
+      <div className={`${styles.detailSection} ${styles.expanded}`}>
+        <DetailHeader
+          currentStore={store}
+          expanded={expanded}
+          onClickArrow={goToMap}
+        />
+        <DetailContent currentStore={store} expanded={expanded} />
+      </div>
+    </>
   );
 };
 export default StoreDetail;

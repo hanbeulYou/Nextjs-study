@@ -22,7 +22,8 @@ const Home: NextPage<Props> = ({ stores }) => {
     <Fragment>
       <NextSeo
         title="매장 지도"
-        description="Next.js 시작하기 강의를 위한 매장 지도 서비스."
+        description="Next.js 시작하기 강의를 위한 매장 지도 서비스"
+        canonical="https://nextjs-study-zeta.vercel.app/"
       />
       <Header />
       <main
