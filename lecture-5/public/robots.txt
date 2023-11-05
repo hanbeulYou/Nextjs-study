@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://nextjs-study-zeta.vercel.app/
+
+# Sitemaps
+Sitemap: https://nextjs-study-zeta.vercel.app/sitemap.xml
