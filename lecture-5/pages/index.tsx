@@ -43,9 +43,8 @@ const Home: NextPage<Props> = ({ stores }) => {
 export default Home;
 
 export async function getStaticProps() {
-  const stores = await fetch(
-    `${process.env.NEXT_PUBLIC_API_URL}/api/stores`
-  ).then((response) => response.json());
+  /** TODO: next api routes로 불러오기 */
+  const stores = (await import('../public/stores.json')).default;
 
   return {
     props: { stores },
